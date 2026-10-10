@@ -13,7 +13,7 @@ This project was built collaboratively as part of the Numerical Analysis course.
 * `dataPrep.py` - Data cleaning and preprocessing pipeline.
 * `svd.py` - Custom SVD implementation and numerical convergence tests.
 * `main.py` - End-to-end evaluation script on the test set and metric reporting.
-* `rezultat.png` - Reconstruction error visualization plot.
+* `result.png` - Reconstruction error visualization plot.
 
 ## Evaluation Metrics
 
