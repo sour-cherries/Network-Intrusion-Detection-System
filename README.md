@@ -22,7 +22,7 @@ Configuring the model to retain k = 5 principal components yielded the following
 * **Detected Attacks:** 233,611 out of 250,436
 * **False Positives:** 2,460
 
-But for futher explanation and details I would advice you to read more on the CN_EN.pdf
+But for further explanation and details, I would advise you to read more on the CN_EN.pdf
 
 ## Running the Project
 
