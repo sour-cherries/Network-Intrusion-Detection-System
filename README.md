@@ -26,7 +26,7 @@ But for futher explanation and details I would advice you to read more on the CN
 
 ## Running the Project
 
-The project does not require external packages; only a standard Python installation is needed.
+The project does not require external packages; only a standard Python installation is needed. But install all the files from the `data.zip` file to be able to run the code 
 
 Run the pipeline:
 ```bash
