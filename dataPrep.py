@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 
+#NSL-KDD dataset atributes
 COLUMNS = [
     'duration', 'protocol_type', 'service', 'flag', 'src_bytes', 
     'dst_bytes', 'land', 'wrong_fragment', 'urgent', 'hot', 
@@ -20,12 +21,14 @@ TEXT_COLUMNS = ['protocol_type', 'service', 'flag']
 def standardize(X):
     mean = np.mean(X, axis=0)
     std = np.std(X, axis=0)
-    
+
+    #Preventing division by 0
     std[std == 0] = 1e-10
     X_std = (X - mean) / std
     
     return X_std, mean, std
 
+#Encoding for training dataset
 def encode_train(train_file):
     traffic_data = pd.read_csv(train_file, names=COLUMNS)
 
@@ -41,6 +44,7 @@ def encode_train(train_file):
     
     return X_std, mean, std, final_columns
 
+#Encoding for real dataset
 def encode_real(real_file, train_mean, train_std, train_columns):
     real_data = pd.read_csv(real_file, names=COLUMNS)
     
